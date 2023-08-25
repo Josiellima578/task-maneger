@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task Manager</title>
+  <link rel="stylesheet" href="src/style.css">
+</head>
+<body>
+  <div id="tasks-container">
+
+    <div id="tasks-header">
+      <h2>Save your next task:</h2>
+      <form action="" id="add-task-form" autocomplete="off">
+        <input type="text" id="task-title" placeholder="What are you going to do?">
+        <button id="add-btn" type="submit">
+          <ion-icon name="add-outline"></ion-icon>
+        </button>
+      </form>
+    </div> <!--tasks-header-->
+
+    <div id="tasks-list-container">
+      <h2>these are your tasks:</h2>
+      <ul id="task-list">
+        <li class="task-box template hide">
+          <span class="task-title">test 1</span>
+          <ion-icon class="done-btn" name="checkmark-outline"></ion-icon>
+          <ion-icon class="remove-btn" name="close-outline"></ion-icon>
+        </li>
+      </ul>
+    </div> <!--taks-list-container-->
+
+  </div> <!--tasks-container-->
+  
+  <script src="src/index.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
